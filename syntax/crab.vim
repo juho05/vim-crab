@@ -32,6 +32,7 @@ syntax keyword crabKeyword
 syntax match crabOperator "\v\+"
 syntax match crabOperator "\v-"
 syntax match crabOperator "\v\*"
+syntax match crabOperator "\v\*\*"
 syntax match crabOperator /\/\%(=\|\ze[^/*]\)/
 syntax match crabOperator "\v\%"
 syntax match crabOperator "\v\|\|"
