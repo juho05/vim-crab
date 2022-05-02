@@ -50,9 +50,9 @@ syntax match crabNumber "[-+]\?\d\+\.\d*"
 
 syntax region crabString start=/"/ skip=/\\"/ end=/"/ oneline
 
-syntax match crabDeclaration       /\<func\>/ nextgroup=crabFunction skipwhite skipnl
-syntax match crabFunction          /\w\+/ contained skipwhite skipnl
 syntax match crabFunctionCall /\w\+\ze\%(\[\%(\%(\[]\)\?\w\+\(,\s*\)\?\)\+\]\)\?(/
+syntax match crabFunction          /\w\+/ contained skipwhite skipnl
+syntax match crabDeclaration       /\<func\>/ nextgroup=crabFunction skipwhite skipnl
 
 syntax region crabBody start="{" end="}" fold transparent
 
@@ -62,10 +62,10 @@ highlight default link crabBoolean Boolean
 highlight default link crabNumber Number
 highlight default link crabString String
 highlight default link crabOperator Operator
-highlight default link crabKeyword Keyword
 highlight default link crabNull Type
-highlight default link crabDeclaration Keyword
+highlight default link crabKeyword Keyword
 highlight default link crabFunction Function
 highlight default link crabFunctionCall Type
+highlight default link crabDeclaration Keyword
 
 let b:current_syntax = "crab"
