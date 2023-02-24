@@ -1,6 +1,6 @@
 # vim-crab
 
-Very basic vim language support for the [crab](https://github.com/Bananenpro/crab) programming language.
+Very basic vim language support for the [crab](https://github.com/juho05/crab) programming language.
 
 ## Features
 
@@ -12,7 +12,7 @@ Very basic vim language support for the [crab](https://github.com/Bananenpro/cra
 ### vim-plug
 
 ```vim
-Plug 'Bananenpro/vim-crab'
+Plug 'juho05/vim-crab'
 ```
 
 ## License
